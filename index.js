@@ -16,4 +16,6 @@ app.get("*", (req, res) => {res.render("./notFound.pug")})
 
 app.set('view-engine', 'pug');
 
-app.listen(3000);
+app.listen(80);
+
+console.log("app listening at port %s", 80)
