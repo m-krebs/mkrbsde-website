@@ -7,10 +7,14 @@ body {
     background-color: rgb(23, 23, 23);
     color: white;
     text-align: center;
+    height: 100%;
 }
 
+html {
+    height: 100%;
+}
 header {
-    margin: 40px auto;
+    padding: 40px;
 }
 
 #notme {
@@ -64,7 +68,7 @@ header {
 }
 
 rect[data-level="4"].ContributionCalendar-day {
-    fill:#3b0641 !important;
+    fill: rgb(81, 4, 97) !important;
 }
 rect[data-level="3"].ContributionCalendar-day {
     fill:#6a1274 !important;
