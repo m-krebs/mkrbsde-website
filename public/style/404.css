@@ -1,0 +1,30 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.button {
+    background-color: #9b37a7;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+    border-radius: 1em;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: #9b57a1;
+}

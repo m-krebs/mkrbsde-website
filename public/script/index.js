@@ -1,5 +1,5 @@
 let index = 0;
-let words = ['This', 'is', 'Home🏠'];
+let words = ['Welcome', 'to my', 'Website'];
 setInterval(() => {
     if (index == 3) index = 0;
     document.title = words[index];  

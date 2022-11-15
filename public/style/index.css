@@ -9,42 +9,15 @@ body {
     text-align: center;
 }
 
-.menu {
-    /* background-color: rgba(40, 40, 40, 1); */
-    display: flex;
-    gap: 30px;
-    padding: 40px 0;
-    justify-content: center;    
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-}
-
-.menu a:hover {
-    background: -webkit-radial-gradient(rgb(60, 148, 174), #6e1578);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.menu a:active {
-    transform: scale(0.9);
-}
-
 header {
     margin: 40px auto;
 }
 
 #notme {
-    max-width: 500px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    margin-bottom: 30px;
 }
 
 .intro {
@@ -67,12 +40,41 @@ header {
     transition: color;
     transition-duration: 300ms;
     border-radius: 50%;
+    transition: transform 1s ease-in-out;
 }
 
 .c-link:hover {
-    background-color: #1d1d1d;
+    background-color: #292929;
+    transform: rotate(360deg);
 }
 
 .c-link svg:active {
     stroke: white;
+}
+
+.calendar {
+    padding: 30px;
+    max-width: 1000px;
+    border: none !important;
+}
+
+.table_link {
+    text-decoration: none;
+    color: white;
+}
+
+rect[data-level="4"].ContributionCalendar-day {
+    fill:#3b0641 !important;
+}
+rect[data-level="3"].ContributionCalendar-day {
+    fill:#6a1274 !important;
+}
+rect[data-level="2"].ContributionCalendar-day {
+    fill:#9b37a7 !important;
+}
+rect[data-level="1"].ContributionCalendar-day {
+    fill:#be77c7 !important;
+}
+rect[data-level="0"].ContributionCalendar-day {
+    fill:#e9ceeb !important;
 }

@@ -3,24 +3,33 @@ html(lang='en')
  head
    title Loading...
    link(rel="stylesheet", href="style/index.css")
+   link(rel="stylesheet", href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css")
    script(src="script/index.js", defer)
+   script(src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js")
  body
-    nav.menu
-        a(href="/home") Home
-        a(href="/blog") Blog
-        a(href="/faq") FAQ
-        a(href="/more") More
+    include ../components/nav.pug
     header
         img(src="img/guy.png", alt="guy", id="notme")
+        a(class="table_link" href="https://github.com/m-krebs", title="GitHub", target="_blank", rel="noopener noreferrer")
+            .calendar
         h3.intro Hello👋, I'm Michael, I'm 19y/o and I ❤️ to code.
-        //- h3 I love to develop software and to play Games.
-        //- h3 You may not believe me, but I'm even able to exit vim.
         .c-block
             .wrapper
-                a(href="https://github.com/m-krebs", title="GitHub", target="_blank", rel="noopener noreferrer").c-link 
+                a(href="https://github.com/m-krebs", title="GitHub", target="_blank", rel="noopener noreferrer").c-link
                     svg(stroke="#b007b0" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg")
-                        path(d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22")
-            a(href="mailto:michikrbs@gmail.com" title="Email" target="_blank" rel="noreferrer").c-link
-                svg(stroke="#b007b0" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg")
-                    path(d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z")
-                    polyline(points="22,6 12,13 2,6")
+                        path(d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22")    
+            .wrapper
+                a(href="mailto:michikrbs@gmail.com" title="email" target="_blank" rel="noreferrer").c-link
+                    svg(stroke="#b007b0" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z")
+                        polyline(points="22,6 12,13 2,6")
+            .wrapper    
+                a(href="https://www.linkedin.com/in/michael-krebs-b6075a256/", title="LinkedIn", target="_blank", rel="noopener noreferrer").c-link
+                    svg(xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#b007b0" stroke-width="3px"  viewBox="0 0 48 48" width="1em" height="1em")
+                        path( d="M8.421,14h0.052l0,0C11.263,14,13,12,13,9.5C12.948,6.945,11.263,5,8.526,5S4,6.945,4,9.5	C4,12,5.736,14,8.421,14z M4,17h9v26H4V17z M44,26.5c0-5.247-4.253-9.5-9.5-9.5c-3.053,0-5.762,1.446-7.5,3.684V17h-9v26h9V28l0,0	c0-2.209,1.791-4,4-4s4,1.791,4,4v15h9C44,43,44,27.955,44,26.5z")
+            .wrapper
+                a(href="https://www.xing.com/profile/Michael_Krebs94/cv", title="Xing", target="_blank", rel="noopener noreferrer").c-link 
+                    svg(xmlns="http://www.w3.org/2000/svg" stroke="#b007b0" stroke-width="2px" x="0px" y="0px" width="1em" height="1em" viewBox="0 0 50 50")
+                        path(fill-rule="evenodd" d="M 6.222656 2 C 3.917969 2 2 3.917969 2 6.222656 L 2 43.785156 C 2 46.082031 3.917969 48 6.222656 48 L 43.785156 48 C 46.082031 48 48 46.082031 48 43.785156 L 48 6.222656 C 48 3.917969 46.082031 2 43.785156 2 Z M 6.203125 4 L 43.796875 4 C 45.011719 4 46 4.988281 46 6.203125 L 46 43.796875 C 46 45.011719 45.011719 46 43.796875 46 L 6.203125 46 C 4.988281 46 4 45.011719 4 43.796875 L 4 6.203125 C 4 4.988281 4.988281 4 6.203125 4 Z M 34 8 C 33.804688 8 33.25 8.222656 33 9 L 22.015625 28 C 21.820313 28.195313 21.820313 28.382813 22.015625 28.578125 L 29 41 C 29.382813 41.730469 29.613281 41.988281 30 42 L 35 42 C 35.570313 42 36.371094 41.738281 36 41 L 28.914063 28.578125 C 28.726563 28.382813 28.726563 28.195313 28.914063 28 L 39.652344 9 C 39.847656 8.617188 39.382813 8 39 8 Z M 12.636719 13 C 12.050781 13 11.832031 13.28125 12.433594 14.457031 L 15.886719 20.78125 C 16.074219 20.980469 16.074219 21.167969 15.886719 21.355469 L 10.050781 31.742188 C 9.6875 32.378906 9.988281 32.984375 11 33 L 16 33 C 16.421875 32.972656 16.792969 32.515625 17 32 L 23 21.550781 C 23.1875 21.355469 23.1875 21.167969 23 20.980469 L 19 14 C 18.734375 13.421875 18.601563 13.019531 18 13 Z")
+        script. 
+            new GitHubCalendar(".calendar", "m-krebs", { responsive:true, global_stats:false})
