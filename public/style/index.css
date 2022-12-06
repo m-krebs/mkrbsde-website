@@ -80,5 +80,5 @@ rect[data-level="1"].ContributionCalendar-day {
     fill:#be77c7 !important;
 }
 rect[data-level="0"].ContributionCalendar-day {
-    fill:#e9ceeb !important;
+    fill:#333 !important;
 }
